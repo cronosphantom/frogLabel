@@ -1,0 +1,237 @@
+.header {
+  position: static;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 42px;
+  color: #ffffff;
+  background-color: #4e2817;
+}
+
+.headercontent {
+  display: flex;
+  max-width: 1000px;
+  padding: 0 20px;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menuicon {
+  width: 60px;
+  display: none;
+}
+
+.menubutton {
+  color: white;
+  background-color: transparent;
+  appearance: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 3px;
+  padding: 0;
+}
+
+.logo {
+  margin-right: 15px;
+}
+
+.logo a {
+  display: flex;
+  max-width: 140px;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 3px;
+}
+
+.logo a span {
+  color: #f26922;
+}
+
+.menuitems,
+.authitem {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menuitems li a,
+.authitem li a {
+  display: block;
+  height: auto;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.menuitems li a:hover,
+.menuitems li a:focus,
+.menuitems li a:active,
+.authitem li a:hover,
+.authitem li a:focus,
+.authitem li a:active {
+  background-color: #3e2012;
+}
+
+@media screen and (max-width: 1040px) {
+  .header {
+    height: 55px;
+  }
+
+  .menuicon {
+    display: block;
+  }
+
+  .menuitems {
+    display: none;
+  }
+
+  .auth {
+    display: none;
+  }
+
+  .mobilenav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
+    transition: opacity 200ms ease-out;
+    top: 55px;
+    left: 0;
+    height: calc(100% - 55px);
+    overflow-y: auto;
+    opacity: 1;
+  }
+
+  .mobilenavcontainer {
+    position: relative;
+    transition: top 200ms ease-out;
+    max-width: 710px;
+    margin: 0 auto;
+    top: 0;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 25px 30px;
+    padding: 0;
+  }
+
+  .productslist {
+    list-style: none;
+    min-width: 110px;
+    margin: 5px 0;
+    width: auto;
+  }
+
+  .productslist button {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .productslist button img {
+    margin-bottom: 5px;
+  }
+
+  .productslist button div {
+    font-weight: 700;
+    text-align: center;
+    color: #404040;
+  }
+
+  .separator {
+    margin: 15px 0 30px 0;
+    color: #404040;
+  }
+
+  .authentication {
+    margin: 15px 30px 30px;
+    text-align: center;
+  }
+
+  .loginbutton {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 0;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 17px 25px;
+    border-radius: 5px;
+    background-color: #5ba4e6;
+  }
+
+  .loginbutton:hover {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.18) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  .regular {
+    color: #404040;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 15px 0;
+    text-align: inherit;
+  }
+
+  .regular button {
+    margin-left: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    text-align: inherit;
+    text-decoration: none;
+    color: #2b71b8;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1041px) {
+  .mobilenav {
+    display: none;
+  }
+}

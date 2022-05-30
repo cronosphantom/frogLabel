@@ -1,0 +1,160 @@
+.footer {
+  text-align: left;
+  padding: 3em 0;
+  background-color: #f3f3f3;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.links {
+  flex-grow: 1;
+  flex-basis: 50%;
+  margin-bottom: 35px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.nav span {
+  margin: 0 30px 0 0;
+  font-size: 14px;
+}
+
+.nav span a {
+  color: #2b71b8;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: inherit;
+  font-weight: 700;
+  padding: 0;
+  text-align: inherit;
+  text-decoration: none;
+}
+
+.locale {
+  text-align: right;
+  margin-bottom: 35px;
+  min-width: 1px;
+  font-size: 14px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: inherit;
+  font-weight: 700;
+  padding: 0;
+  text-align: inherit;
+  text-decoration: none;
+  color: #2b71b8;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+}
+
+.flag {
+  margin-right: 8px;
+  background-position: left 0px;
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+}
+
+.interactive {
+  margin-bottom: 0;
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+
+.interactive a {
+  display: inline-block;
+  margin-right: 25px;
+  transition: color 0.2s;
+  color: #909090;
+  opacity: 0.75;
+}
+
+.interactive a:hover {
+  color: #404040;
+}
+
+.legal {
+  text-align: right;
+  flex-grow: 1;
+  flex-basis: 50%;
+  font-size: 14px;
+  color: #404040;
+}
+
+.legal small {
+  margin-right: 1rem;
+}
+
+.legal a {
+  color: #2b71b8;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: inherit;
+  font-weight: 700;
+  padding: 0;
+  text-align: inherit;
+  text-decoration: none;
+}
+
+.siteMap {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 1040px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .nav {
+    justify-content: center;
+    line-height: 60px;
+  }
+
+  .nav span {
+    margin: 0 15px;
+  }
+
+  .links {
+    margin-bottom: 20px;
+  }
+
+  .interactive {
+    margin-bottom: 16px;
+  }
+
+  .legal {
+    text-align: center;
+    line-height: 48px;
+  }
+}
